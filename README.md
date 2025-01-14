@@ -2,7 +2,7 @@
 
 ### Demo Video:
 
-[Demo Video Link]("https://www.loom.com/share/028269b61b54496389c93eb529dae10e?sid=3a5a59e7-39f5-427c-acc6-7f46e7738a7a")
+[Demo Video Link](https://www.loom.com/share/028269b61b54496389c93eb529dae10e?sid=3a5a59e7-39f5-427c-acc6-7f46e7738a7a)
 
 ## Key components
 
