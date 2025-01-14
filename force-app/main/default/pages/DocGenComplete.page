@@ -1,0 +1,35 @@
+<apex:page lightningStylesheets="true" showHeader="false" standardController="Case" applyBodyTag="true" applyHtmlTag="">
+    <html>
+        <head>
+            <script>
+
+                function sendMessageToParent() {
+                    const payLoad = {
+                        docId: '{!$CurrentPage.parameters.sdocIds}',
+                        recordId: '{!$CurrentPage.parameters.recordId}'
+                    }
+                    parent.postMessage({
+                                            "documentId":'{!$CurrentPage.parameters.sdocIds}',
+                                            "recordId":'{!$CurrentPage.parameters.recordId}'
+                                        },
+                        "*");
+                }
+            </script>
+        </head>
+        <body onload="sendMessageToParent()">
+            <h1>Congratulations your document generation is complete</h1>
+
+            Record Id : {!$CurrentPage.parameters.recordId}
+            Document Id : {!$CurrentPage.parameters.sdocIds}
+
+            Close this modal window and refresh your window to see the new document in your Files and Attachment section.
+            <div id="lightning" />
+
+           
+
+        </body>
+    </html>
+    
+    
+
+</apex:page>

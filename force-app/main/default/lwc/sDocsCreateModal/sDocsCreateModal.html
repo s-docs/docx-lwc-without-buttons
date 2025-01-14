@@ -1,0 +1,13 @@
+<template>
+    <lightning-modal-header label="SDocs Create Document"></lightning-modal-header>
+    <lightning-modal-body>
+        IFrame Link: {sDocIframeLink} 
+        <iframe src={sDocIframeLink} 
+                height="500" width="800" title="iFrame in a lightning modal">
+        </iframe>
+
+    </lightning-modal-body>
+    <lightning-modal-footer>
+        <lightning-button label="Close" onclick={handleOkay}></lightning-button>
+    </lightning-modal-footer>
+</template>
